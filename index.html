@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Professional eye care, appointments, optical frames and clinical services.">
+  <title>ClearView Eye Clinic | See Life Clearly</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="nav">
+    <a class="brand" href="#home">ClearView<span>+</span></a>
+    <nav aria-label="Main navigation">
+      <a href="#services">Services</a><a href="#frames">Frames</a><a href="#work">Our Work</a><a href="#about">About</a>
+    </nav>
+    <a class="btn btn-small" href="#appointment">Book Appointment</a>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">MODERN EYE CARE · PATIENT FIRST</p>
+        <h1>See life<br><em>clearly.</em></h1>
+        <p class="lead">Comprehensive eye examinations, expert optical care and stylish eyewear—all in one welcoming clinic.</p>
+        <div class="actions"><a class="btn" href="#appointment">Book an eye exam</a><a class="text-link" href="#services">Explore services →</a></div>
+        <div class="trust"><span>✓ Professional eye care</span><span>✓ Quality eyewear</span><span>✓ Personal attention</span></div>
+      </div>
+      <div class="hero-card"><div class="orb"></div><div class="eye-art">◉</div><div class="float-card"><strong>Healthy vision</strong><small>Your sight deserves expert care.</small></div></div>
+    </section>
+
+    <section id="services" class="section">
+      <div class="section-head"><div><p class="eyebrow">WHAT WE DO</p><h2>Complete care for<br>your vision.</h2></div><p>From routine examinations to specialist referrals and optical solutions, we are here for every stage of your eye-care journey.</p></div>
+      <div class="cards">
+        <article><div class="icon">◎</div><h3>Eye Examinations</h3><p>Comprehensive vision assessment, refraction and eye-health screening.</p><a href="#appointment">Book now →</a></article>
+        <article><div class="icon">✦</div><h3>Optical Services</h3><p>Prescription spectacles, lenses, frames and practical advice tailored to you.</p><a href="#frames">Shop frames →</a></article>
+        <article><div class="icon">◌</div><h3>Specialist Care</h3><p>Assessment, management and referral for conditions requiring advanced care.</p><a href="#appointment">Talk to us →</a></article>
+      </div>
+    </section>
+
+    <section id="frames" class="section frames"><div class="section-head"><div><p class="eyebrow">OPTICAL COLLECTION</p><h2>Frames that fit<br>your style.</h2></div><p>Browse a curated selection of everyday, professional and statement frames. Replace these demo products with your live catalogue.</p></div><div class="products"><article><div class="frame-img frame-a">◯</div><h3>Classic Black</h3><p>Timeless acetate · Prescription ready</p><strong>KES 3,500</strong><button onclick="selectFrame('Classic Black')">Enquire</button></article><article><div class="frame-img frame-b">◯</div><h3>Modern Tortoise</h3><p>Lightweight acetate · Prescription ready</p><strong>KES 4,200</strong><button onclick="selectFrame('Modern Tortoise')">Enquire</button></article><article><div class="frame-img frame-c">◯</div><h3>Minimal Metal</h3><p>Lightweight metal · Prescription ready</p><strong>KES 4,800</strong><button onclick="selectFrame('Minimal Metal')">Enquire</button></article></div></section>
+
+    <section id="work" class="section work"><div><p class="eyebrow">OUR WORK</p><h2>Care you can<br><em>see.</em></h2><p>Showcase your clinic's real patient outcomes, procedures, optical work and community eye-care initiatives here. Always publish patient images only with appropriate consent.</p><a class="btn" href="#appointment">Start your care journey</a></div><div class="gallery"><div class="gallery-item tall">CLINICAL<br>CARE</div><div class="gallery-item">OPTICAL<br>CRAFT</div><div class="gallery-item">COMMUNITY<br>VISION</div></div></section>
+
+    <section id="appointment" class="appointment"><div><p class="eyebrow">YOUR VISION MATTERS</p><h2>Book your appointment.</h2><p>Complete the form and the clinic can confirm your preferred date and time.</p></div><form onsubmit="book(event)"><label>Full name<input id="name" required placeholder="Your name"></label><label>Phone number<input id="phone" type="tel" required placeholder="07XX XXX XXX"></label><label>Service<select id="service"><option>Comprehensive eye examination</option><option>Refraction / spectacles</option><option>Contact lens consultation</option><option>Follow-up visit</option><option>Other</option></select></label><div class="form-row"><label>Preferred date<input id="date" type="date" required></label><label>Preferred time<input id="time" type="time" required></label></div><label>Message<textarea id="message" rows="3" placeholder="Anything we should know?"></textarea></label><button class="btn" type="submit">Request appointment →</button><p id="status" class="status" role="status"></p></form></section>
+  </main>
+
+  <footer><div class="brand">ClearView<span>+</span></div><p>Professional eye care with a personal touch.</p><p>© <span id="year"></span> ClearView Eye Clinic</p></footer>
+  <script src="script.js"></script>
+</body>
+</html>

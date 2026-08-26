@@ -1,0 +1,3 @@
+document.getElementById('year').textContent=new Date().getFullYear();
+function selectFrame(frame){document.getElementById('appointment').scrollIntoView({behavior:'smooth'});document.getElementById('message').value='I am interested in the '+frame+' frame.';document.getElementById('service').value='Refraction / spectacles';}
+function book(event){event.preventDefault();const name=document.getElementById('name').value.trim();const date=document.getElementById('date').value;const status=document.getElementById('status');status.textContent=`Thanks, ${name}. Your appointment request for ${date} has been received. The clinic should confirm the time with you shortly.`;event.target.reset();}
