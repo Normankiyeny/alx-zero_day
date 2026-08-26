@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="VisionCare Eye Clinic — comprehensive eye examinations, quality eyewear and patient-centred eye care.">
+  <title>VisionCare Eye Clinic | Clear Vision. Better Life.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="announcement">Your vision deserves expert care · Appointments available Monday–Saturday</div>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="VisionCare home">
+      <span class="brand-mark">VC</span><span><strong>VisionCare</strong><small>Eye Clinic</small></span>
+    </a>
+    <button class="menu-toggle" aria-label="Open navigation">☰</button>
+    <nav class="nav" aria-label="Main navigation">
+      <a href="#services">Services</a><a href="#work">Our Work</a><a href="#eyewear">Eyewear</a><a href="#about">About</a>
+      <a class="nav-cta" href="#booking">Book an Appointment</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-copy">
+        <span class="eyebrow">PRECISION EYE CARE · PERSONAL ATTENTION</span>
+        <h1>See the world<br><em>with clarity.</em></h1>
+        <p>Modern eye examinations, professional optical care and carefully selected frames — all in one welcoming clinic.</p>
+        <div class="hero-actions"><a class="btn btn-primary" href="#booking">Book your eye test <span>→</span></a><a class="text-link" href="#services">Explore our services</a></div>
+        <div class="trust-row"><span>✓ Comprehensive exams</span><span>✓ Quality eyewear</span><span>✓ Patient-first care</span></div>
+      </div>
+      <div class="hero-visual">
+        <div class="orb orb-one"></div><div class="orb orb-two"></div>
+        <div class="portrait-card"><div class="eye-illustration"><div class="iris"><span></span></div></div><div class="portrait-caption"><strong>Healthy vision starts here.</strong><span>Expert care, from examination to eyewear.</span></div></div>
+        <div class="floating-card"><span class="float-icon">✦</span><div><strong>Patient-centred</strong><small>Care you can trust</small></div></div>
+      </div>
+    </section>
+
+    <section class="stats"><div><strong>01</strong><span>Thorough eye<br>examinations</span></div><div><strong>02</strong><span>Prescription<br>eyewear</span></div><div><strong>03</strong><span>Specialist<br>referrals</span></div><div><strong>04</strong><span>Ongoing eye<br>health support</span></div></section>
+
+    <section id="services" class="section services-section">
+      <div class="section-heading"><span class="eyebrow">WHAT WE DO</span><h2>Complete care for<br><em>your eyes.</em></h2><p>From your first consultation to the perfect pair of glasses, our team is here to make eye care simple and comfortable.</p></div>
+      <div class="service-grid">
+        <article class="service-card featured"><span class="service-number">01</span><span class="service-icon">◉</span><h3>Comprehensive Eye Exams</h3><p>Detailed vision assessment, refraction and eye-health screening tailored to your needs.</p><a href="#booking">Book an exam →</a></article>
+        <article class="service-card"><span class="service-number">02</span><span class="service-icon">◌</span><h3>Prescription Eyewear</h3><p>Comfortable, stylish frames and quality lenses selected to match your prescription and lifestyle.</p><a href="#eyewear">Shop frames →</a></article>
+        <article class="service-card"><span class="service-number">03</span><span class="service-icon">◇</span><h3>Eye Disease Screening</h3><p>Assessment and monitoring for common eye conditions, with timely referral when specialist care is needed.</p><a href="#booking">Request screening →</a></article>
+        <article class="service-card"><span class="service-number">04</span><span class="service-icon">✧</span><h3>Specialised Care</h3><p>Professional follow-up and coordinated referrals for patients who need advanced management.</p><a href="#booking">Talk to our team →</a></article>
+      </div>
+    </section>
+
+    <section id="work" class="work-section">
+      <div class="section-heading light"><span class="eyebrow">OUR WORK</span><h2>Care that makes<br><em>a difference.</em></h2><p>A glimpse into the people, precision and care behind every patient experience.</p></div>
+      <div class="work-grid"><div class="work-image work-one"><span>Clinical care</span></div><div class="work-image work-two"><span>Precision eyewear</span></div><div class="work-image work-three"><span>Patient experience</span></div></div>
+    </section>
+
+    <section id="eyewear" class="section eyewear-section">
+      <div class="section-heading"><span class="eyebrow">THE FRAME EDIT</span><h2>Find your<br><em>perfect frame.</em></h2><p>Browse our sample collection. Add your favourites to your enquiry and we'll confirm availability, prescription details and pricing.</p></div>
+      <div class="product-grid">
+        <article class="product" data-name="Aster Classic" data-price="4500"><div class="frame frame-round"></div><div class="product-info"><div><h3>Aster Classic</h3><span>Lightweight · Unisex</span></div><strong>KSh 4,500</strong></div><button class="add-cart">Add to enquiry</button></article>
+        <article class="product" data-name="Milo Modern" data-price="5200"><div class="frame frame-square"></div><div class="product-info"><div><h3>Milo Modern</h3><span>Acetate · Unisex</span></div><strong>KSh 5,200</strong></div><button class="add-cart">Add to enquiry</button></article>
+        <article class="product" data-name="Nora Slim" data-price="3800"><div class="frame frame-oval"></div><div class="product-info"><div><h3>Nora Slim</h3><span>Minimal · Lightweight</span></div><strong>KSh 3,800</strong></div><button class="add-cart">Add to enquiry</button></article>
+      </div>
+      <div class="cart" id="cart" hidden><div><strong>Your eyewear enquiry</strong><span id="cart-items">No frames selected</span></div><button class="btn btn-dark" id="checkout-btn">Continue →</button></div>
+    </section>
+
+    <section id="about" class="about-section"><div class="about-visual"><div class="big-eye"><div class="iris"></div></div></div><div class="about-copy"><span class="eyebrow">WHY VISIONCARE</span><h2>Professional care.<br><em>Human approach.</em></h2><p>We believe great eye care is about more than a prescription. It is about listening carefully, examining thoroughly and giving you practical choices that fit your life.</p><ul><li><span>✓</span> Clear explanations at every step</li><li><span>✓</span> Modern clinical assessment</li><li><span>✓</span> Quality frames and lenses</li><li><span>✓</span> Thoughtful follow-up care</li></ul><a class="btn btn-primary" href="#booking">Meet us at the clinic →</a></div></section>
+
+    <section id="booking" class="booking-section"><div class="booking-intro"><span class="eyebrow">YOUR NEXT APPOINTMENT</span><h2>Let's take care<br>of your <em>vision.</em></h2><p>Complete the form and our team will contact you to confirm your appointment time.</p><div class="contact-note"><strong>Need help?</strong><span>Call or WhatsApp the clinic during opening hours.</span><a href="tel:+254700000000">+254 700 000 000</a></div></div>
+      <form class="booking-form" id="booking-form"><div class="form-row"><label>Full name<input name="name" required placeholder="Your full name"></label><label>Phone number<input name="phone" required type="tel" placeholder="07XX XXX XXX"></label></div><div class="form-row"><label>Preferred date<input name="date" required type="date"></label><label>Preferred time<select name="time" required><option value="">Select a time</option><option>8:00 AM – 10:00 AM</option><option>10:00 AM – 12:00 PM</option><option>12:00 PM – 2:00 PM</option><option>2:00 PM – 4:00 PM</option></select></label></div><label>Service<select name="service" required><option value="">What can we help with?</option><option>Comprehensive eye examination</option><option>Prescription / new glasses</option><option>Eye disease screening</option><option>Follow-up appointment</option><option>Other</option></select></label><label>Message <span>(optional)</span><textarea name="message" rows="4" placeholder="Tell us anything we should know..."></textarea></label><button class="btn btn-primary full" type="submit">Request appointment <span>→</span></button><p class="form-status" id="form-status" role="status"></p></form>
+    </section>
+  </main>
+
+  <footer class="footer"><div class="brand footer-brand"><span class="brand-mark">VC</span><span><strong>VisionCare</strong><small>Eye Clinic</small></span></div><p>Clear vision. Better life.</p><div class="footer-links"><a href="#services">Services</a><a href="#eyewear">Eyewear</a><a href="#booking">Appointments</a></div><small>© 2026 VisionCare Eye Clinic. All rights reserved.</small></footer>
+  <script src="app.js"></script>
+</body>
+</html>
